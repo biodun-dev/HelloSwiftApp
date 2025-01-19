@@ -1,8 +1,20 @@
-//
-//  ChatView.swift
-//  HelloSwiftApp
-//
-//  Created by User on 19/01/2025.
-//
+import SwiftUI
 
-import Foundation
+struct ChatView: View {
+    var body: some View {
+        NavigationStack {
+            DynamicTitleView(title: "Chat")
+                .overlay(
+                    VStack {
+                        Text("💬 Chat with your friends!")
+                            .font(.title)
+                            .padding()
+                    }
+                )
+        }
+    }
+}
+
+#Preview {
+    ChatView()
+}

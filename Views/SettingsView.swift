@@ -1,8 +1,20 @@
-//
-//  SettingsView.swift
-//  HelloSwiftApp
-//
-//  Created by User on 19/01/2025.
-//
+import SwiftUI
 
-import Foundation
+struct SettingsView: View {
+    var body: some View {
+        NavigationStack {
+            DynamicTitleView(title: "Settings")
+                .overlay(
+                    VStack {
+                        Text("⚙️ Adjust your settings here.")
+                            .font(.title)
+                            .padding()
+                    }
+                )
+        }
+    }
+}
+
+#Preview {
+    SettingsView()
+}

@@ -14,6 +14,13 @@
 		CE616DAB2D3CD4E0005598F7 /* HelloSwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DAA2D3CD4E0005598F7 /* HelloSwiftAppTests.swift */; };
 		CE616DB52D3CD4E1005598F7 /* HelloSwiftAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DB42D3CD4E1005598F7 /* HelloSwiftAppUITests.swift */; };
 		CE616DB72D3CD4E1005598F7 /* HelloSwiftAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DB62D3CD4E1005598F7 /* HelloSwiftAppUITestsLaunchTests.swift */; };
+		CE616DC42D3CD7F7005598F7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DC32D3CD7F7005598F7 /* ProfileView.swift */; };
+		CE616DCA2D3CDABF005598F7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DC92D3CDABF005598F7 /* SplashView.swift */; };
+		CE616DCC2D3CDCE4005598F7 /* ProfilePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DCB2D3CDCE4005598F7 /* ProfilePreviewView.swift */; };
+		CE616DCF2D3CE129005598F7 /* DynamicTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DCE2D3CE129005598F7 /* DynamicTitleView.swift */; };
+		CE616DD12D3CE631005598F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DD02D3CE631005598F7 /* HomeView.swift */; };
+		CE616DD32D3CE656005598F7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DD22D3CE656005598F7 /* ChatView.swift */; };
+		CE616DD52D3CE693005598F7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE616DD42D3CE693005598F7 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		CE616DB02D3CD4E1005598F7 /* HelloSwiftAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE616DB42D3CD4E1005598F7 /* HelloSwiftAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftAppUITests.swift; sourceTree = "<group>"; };
 		CE616DB62D3CD4E1005598F7 /* HelloSwiftAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE616DC32D3CD7F7005598F7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CE616DC92D3CDABF005598F7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CE616DCB2D3CDCE4005598F7 /* ProfilePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePreviewView.swift; sourceTree = "<group>"; };
+		CE616DCE2D3CE129005598F7 /* DynamicTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTitleView.swift; sourceTree = "<group>"; };
+		CE616DD02D3CE631005598F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE616DD22D3CE656005598F7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		CE616DD42D3CE693005598F7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,10 @@
 		CE616D8C2D3CD4DD005598F7 = {
 			isa = PBXGroup;
 			children = (
+				CE616DC82D3CD997005598F7 /* Models */,
+				CE616DC72D3CD97F005598F7 /* Services */,
+				CE616DC62D3CD972005598F7 /* Components */,
+				CE616DC52D3CD95D005598F7 /* Views */,
 				CE616D972D3CD4DE005598F7 /* HelloSwiftApp */,
 				CE616DA92D3CD4E0005598F7 /* HelloSwiftAppTests */,
 				CE616DB32D3CD4E1005598F7 /* HelloSwiftAppUITests */,
@@ -96,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				CE616D982D3CD4DE005598F7 /* HelloSwiftAppApp.swift */,
-				CE616D9A2D3CD4DE005598F7 /* ContentView.swift */,
 				CE616D9C2D3CD4E0005598F7 /* Assets.xcassets */,
 				CE616D9E2D3CD4E0005598F7 /* HelloSwiftApp.entitlements */,
 				CE616D9F2D3CD4E0005598F7 /* Preview Content */,
@@ -127,6 +144,50 @@
 				CE616DB62D3CD4E1005598F7 /* HelloSwiftAppUITestsLaunchTests.swift */,
 			);
 			path = HelloSwiftAppUITests;
+			sourceTree = "<group>";
+		};
+		CE616DC52D3CD95D005598F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE616DCD2D3CDFA9005598F7 /* Preview */,
+				CE616D9A2D3CD4DE005598F7 /* ContentView.swift */,
+				CE616DC32D3CD7F7005598F7 /* ProfileView.swift */,
+				CE616DD02D3CE631005598F7 /* HomeView.swift */,
+				CE616DC92D3CDABF005598F7 /* SplashView.swift */,
+				CE616DD22D3CE656005598F7 /* ChatView.swift */,
+				CE616DD42D3CE693005598F7 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE616DC62D3CD972005598F7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE616DCE2D3CE129005598F7 /* DynamicTitleView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CE616DC72D3CD97F005598F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE616DC82D3CD997005598F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE616DCD2D3CDFA9005598F7 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				CE616DCB2D3CDCE4005598F7 /* ProfilePreviewView.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE616DCC2D3CDCE4005598F7 /* ProfilePreviewView.swift in Sources */,
+				CE616DD12D3CE631005598F7 /* HomeView.swift in Sources */,
 				CE616D9B2D3CD4DE005598F7 /* ContentView.swift in Sources */,
+				CE616DD52D3CE693005598F7 /* SettingsView.swift in Sources */,
+				CE616DCA2D3CDABF005598F7 /* SplashView.swift in Sources */,
+				CE616DD32D3CE656005598F7 /* ChatView.swift in Sources */,
+				CE616DC42D3CD7F7005598F7 /* ProfileView.swift in Sources */,
 				CE616D992D3CD4DE005598F7 /* HelloSwiftAppApp.swift in Sources */,
+				CE616DCF2D3CE129005598F7 /* DynamicTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
