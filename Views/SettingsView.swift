@@ -3,14 +3,17 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         NavigationStack {
-            DynamicTitleView(title: "Settings")
-                .overlay(
-                    VStack {
-                        Text("⚙️ Adjust your settings here.")
-                            .font(.title)
-                            .padding()
-                    }
-                )
+            ScrollView {
+                VStack {
+                    DynamicTitleView(title: "Settings") 
+                        .padding(.top)
+
+                    Text("⚙️ Adjust your settings here.")
+                        .font(.title)
+                        .padding()
+                }
+                .padding()
+            }
         }
     }
 }
